@@ -70,7 +70,7 @@ Langkahnya sama dengan Render: hubungkan repositori GitHub, isi variabel lingkun
 
 ## Vercel (opsional, belum diuji, ada batasan)
 
-Repositori sudah menyertakan `api/index.js` dan `vercel.json` yang membungkus aplikasi Express sebagai satu fungsi. Konfigurasi ini saya periksa sintaksnya saja; **saya belum men-deploy-nya ke Vercel**, jadi anggap sebagai titik awal yang mungkin perlu penyesuaian.
+Repositori sudah menyertakan `api/index.js` dan `vercel.json`. Folder `public` disajikan langsung oleh Vercel sebagai file statis, dan hanya alamat `/api/...` yang diteruskan ke fungsi Express. Header keamanan (CSP) diatur di `vercel.json` dan mengizinkan koneksi ke `*.supabase.co`. Konfigurasi ini saya periksa sintaksnya saja; **saya belum men-deploy-nya ke Vercel**, jadi anggap sebagai titik awal yang mungkin perlu penyesuaian.
 
 Hal yang perlu kamu ketahui:
 

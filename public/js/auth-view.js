@@ -212,7 +212,7 @@ export function renderGate(root, kind, { onRetry }) {
     },
     broken: {
       title: 'Pustaka login gagal dimuat',
-      text: 'File frontend/vendor/supabase.js tidak termuat.',
+      text: 'File public/vendor/supabase.js tidak termuat.',
       steps: ['Jalankan "npm install" lalu "npm run vendor" di folder proyek.', 'Restart server dan muat ulang halaman.']
     }
   }[kind];

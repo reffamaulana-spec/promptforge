@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const source = path.join(__dirname, '..', '..', 'node_modules', '@supabase', 'supabase-js', 'dist', 'umd', 'supabase.js');
-const target = path.join(__dirname, '..', '..', 'frontend', 'vendor', 'supabase.js');
+const target = path.join(__dirname, '..', '..', 'public', 'vendor', 'supabase.js');
 
 if (!fs.existsSync(source)) {
   console.error('Paket @supabase/supabase-js belum terpasang. Jalankan: npm install');

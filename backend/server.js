@@ -12,7 +12,7 @@ const configRouter = require('./routes/config');
 const aiRouter = require('./routes/ai');
 const { getProvider } = require('./services/ai/provider');
 
-const frontendDir = path.join(__dirname, '..', 'frontend');
+const frontendDir = path.join(__dirname, '..', 'public');
 
 function createApp() {
   const app = express();

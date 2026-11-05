@@ -52,7 +52,7 @@ promptforge/
     services/            promptTasks, auth, ai/ (provider Gemini), prompts/ (instruksi sistem)
     scripts/             checkModel, checkSupabase, tryAi, tryImage, vendorSupabase
     tests/               tes otomatis
-  frontend/
+  public/
     index.html
     css/style.css
     js/                  app, auth, storage, api, ui, builder, image-prompt, pages/
@@ -112,7 +112,7 @@ Buka http://localhost:3000.
 | `npm run check:model` | Mengecek API key Gemini dan model |
 | `npm run check:supabase` | Mengecek koneksi Supabase, tabel, dan RLS |
 | `npm run try:ai`, `npm run try:image` | Mencoba endpoint AI dengan panggilan sungguhan |
-| `npm run vendor` | Menyalin ulang pustaka login ke `frontend/vendor/` |
+| `npm run vendor` | Menyalin ulang pustaka login ke `public/vendor/` |
 
 ## Endpoint API
 
@@ -156,4 +156,4 @@ Format error: `{ "ok": false, "error": { "code": "...", "message": "..." } }`. K
 
 ## Lisensi dan atribusi
 
-Pustaka login `@supabase/supabase-js` disertakan di `frontend/vendor/` dengan lisensi MIT.
+Pustaka login `@supabase/supabase-js` disertakan di `public/vendor/` dengan lisensi MIT.

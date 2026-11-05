@@ -8,7 +8,7 @@ const path = require('node:path');
 
 const { createApp } = require('../server');
 
-const FRONTEND_DIR = path.join(__dirname, '..', '..', 'frontend');
+const FRONTEND_DIR = path.join(__dirname, '..', '..', 'public');
 
 function listFiles(dir, extension) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
