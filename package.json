@@ -1,0 +1,33 @@
+{
+  "name": "promptforge",
+  "version": "0.1.0",
+  "description": "PROMPTFORGE - Craft Better Prompts. AI Prompt Engineering Studio.",
+  "private": true,
+  "main": "backend/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "check:model": "node backend/scripts/checkModel.js",
+    "try:ai": "node backend/scripts/tryAi.js",
+    "try:image": "node backend/scripts/tryImage.js",
+    "test": "node --test backend/tests/smoke.test.js backend/tests/ai.test.js backend/tests/image.test.js backend/tests/frontend.test.js backend/tests/chat.test.js backend/tests/auth.test.js backend/tests/noauth.test.js",
+    "check:supabase": "node backend/scripts/checkSupabase.js",
+    "vendor": "node backend/scripts/vendorSupabase.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.118.0"
+  }
+}

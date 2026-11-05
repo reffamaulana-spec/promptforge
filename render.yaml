@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: promptforge
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: GEMINI_MODEL
+        value: gemini-3.1-flash-lite
+      - key: MAX_IMAGE_MB
+        value: "5"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
